@@ -118,11 +118,11 @@ subscription-api/
 
 ```
 1. POST /auth/register              → token (role: free)
-2. GET  /content/free               → ✅ free articles, no token needed
-3. GET  /content/premium + token    → ❌ 403 free user blocked
+2. GET  /content/free               →  free articles, no token needed
+3. GET  /content/premium + token    →  403 free user blocked
 4. POST /subscription/upgrade       → role = premium, expires in 30 days
 5. POST /auth/login                 → fresh token (role: premium)
-6. GET  /content/premium + token    → ✅ premium articles + access logged
+6. GET  /content/premium + token    →  premium articles + access logged
 7. GET  /admin/logs                 → see log with method, IP, status code
 8. GET  /admin/reports/monthly-csv  → download CSV report
 9. GET  /subscription/status        → shows days_remaining until expiry
