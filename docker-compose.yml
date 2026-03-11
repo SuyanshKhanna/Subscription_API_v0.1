@@ -1,0 +1,49 @@
+# ================================================================
+# DevLearn API — Docker Compose
+# Starts both the API and PostgreSQL together
+# Usage: docker-compose up --build
+# ================================================================
+version: '3.9'
+
+services:
+  api:
+    build: .
+    container_name: devlearn_api
+    ports:
+      - '3000:3000'
+    environment:
+      NODE_ENV:    development
+      PORT:        3000
+      DB_HOST:     db
+      DB_PORT:     5432
+      DB_NAME:     devlearn
+      DB_USER:     postgres
+      DB_PASSWORD: postgres
+      JWT_SECRET:  change_this_secret_in_production
+      JWT_EXPIRES_IN: 7d
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    container_name: devlearn_db
+    environment:
+      POSTGRES_DB:       devlearn
+      POSTGRES_USER:     postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+      - ./db/schema_migration.sql:/docker-entrypoint-initdb.d/02_migration.sql
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 5s
+      timeout:  5s
+      retries:  10
+
+volumes:
+  postgres_data:
