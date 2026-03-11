@@ -148,44 +148,34 @@ Every premium content access captures:
 ## API Testing — Postman Screenshots
 
 ### 1. Register User
-![Register](<img width="1423" height="949" alt="image" src="https://github.com/user-attachments/assets/31adae67-2340-4a4c-aef0-d4d98f8d8c56" />
-)
+![Register](https://github.com/user-attachments/assets/31adae67-2340-4a4c-aef0-d4d98f8d8c56)
 
 ### 2. Login
-![Login](<img width="1360" height="890" alt="image" src="https://github.com/user-attachments/assets/a1429a1b-04f5-49a6-b85d-fe88d1c6d52c" />
-)
+![Login](https://github.com/user-attachments/assets/a1429a1b-04f5-49a6-b85d-fe88d1c6d52c)
 
 ### 3. Free Content (no token)
-![Free Content](<img width="1307" height="975" alt="image" src="https://github.com/user-attachments/assets/d61d8695-bf29-44d4-be53-313c1ad8b461" />
-
-)
+![Free Content](https://github.com/user-attachments/assets/d61d8695-bf29-44d4-be53-313c1ad8b461)
 
 ### 4. Premium Content — No Token (401)
-![No Token](<img width="1333" height="756" alt="image" src="https://github.com/user-attachments/assets/e292021a-4cf0-4973-9263-ab8e36354818" />
-)
+![No Token](https://github.com/user-attachments/assets/e292021a-4cf0-4973-9263-ab8e36354818)
 
 ### 5. Premium Content — Free User (403)
-![Free User](<img width="1347" height="705" alt="image" src="https://github.com/user-attachments/assets/62852951-b460-48aa-8744-fa843bc21945" />
-)
+![Free User](https://github.com/user-attachments/assets/62852951-b460-48aa-8744-fa843bc21945)
 
 ### 6. Subscription Upgrade
-![Upgrade](<img width="1337" height="918" alt="image" src="https://github.com/user-attachments/assets/966f2ea6-7c6b-4f1c-9339-a160fe5a16ab" />
-)
+![Upgrade](https://github.com/user-attachments/assets/966f2ea6-7c6b-4f1c-9339-a160fe5a16ab)
 
 ### 7. Premium Content — Premium User (200)
-![Premium Content](<img width="1344" height="970" alt="image" src="https://github.com/user-attachments/assets/07cc216b-50ef-4b83-8890-cf797a43fefb" />
-)
+![Premium Content](https://github.com/user-attachments/assets/07cc216b-50ef-4b83-8890-cf797a43fefb)
 
 ### 8. Subscription Status
-![Status](<img width="1355" height="833" alt="image" src="https://github.com/user-attachments/assets/63b672fb-4595-4ae1-8dda-61cdc4ca2d4b" />
-)
+![Status](https://github.com/user-attachments/assets/63b672fb-4595-4ae1-8dda-61cdc4ca2d4b)
 
 ### 9. Admin Logs
-![Logs](<img width="1331" height="968" alt="image" src="https://github.com/user-attachments/assets/b699b0ed-bcd2-49bb-b0d1-676b4f518206" />
-)
+![Logs](https://github.com/user-attachments/assets/b699b0ed-bcd2-49bb-b0d1-676b4f518206)
 
 ### 10. Monthly CSV Report
-![CSV](<img width="1338" height="631" alt="image" src="https://github.com/user-attachments/assets/e26884e1-66e8-4763-9169-333b7fb0c600" />
+![CSV](https://github.com/user-attachments/assets/e26884e1-66e8-4763-9169-333b7fb0c600)
 )
 ## Security Notes
 
